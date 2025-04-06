@@ -25,6 +25,9 @@
             --navbar-h1: #3B82F6;
             --navbar-p: #B7C0C9;
             --main-bg: #1e1e1e;
+            --welcome-author: rgb(88, 166, 255);
+            --h3: rgb(183, 192, 201);
+            --p: rgb(183, 192, 201);
     }
     
     .header {
@@ -57,7 +60,6 @@
     }   
 
                 .h1:hover{
-                    cursor: wait;
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
@@ -82,10 +84,6 @@
                         background-position: 100% 0;
                     }
                 }
-
-    .header__nav {
-
-    }
 
     .navbar {
     padding: 0;
@@ -116,7 +114,7 @@
             }
 
     .navbar__item__link {
-        text-decoration: none;
+    text-decoration: none;
     color: var(--navbar-p);
     font-family: Segoe UI;
     font-size: 20px;
@@ -131,21 +129,92 @@
         list-style-type:  none
     }
 
-    .main {
+        .main {
         flex-grow: 1;
         display: flex;
         padding: 40px 40px;
-        width: 100vh;
+        width: 100vw;
     }
-    .welcome {
+
+    .welcome h2 {
+                color: rgb(183, 192, 201);
+                font-family: Segoe UI;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: 0%;   /** Применять эти стили для будущих секторов сайта */
+                text-align: left;
+                margin-bottom: 32px;
     }
+    .welcome h3 {
+    color: var(--h3);
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+    .welcome a {
+        color: var(--welcome-author);
+        font-family: Segoe UI;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+}
+    .player__emoji {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    margin-left: 2px;
+}
+
+.authors{
+    margin: 0;
+    padding: 0;
+}
+.authors__li {
+    list-style-type: disc;
+    padding: 1px 0;
+}
+.authors__li::marker{
+    color: white;
+}
+.h4__desc {
+    /* smpguide.github.io/Semantic/Heading 3 */
+color: var(--h3);
+font-family: Segoe UI;
+font-size: 19px;
+font-weight: 600;
+line-height: 35px;
+letter-spacing: 0%;
+text-align: center;
+}
+p {
+    margin: 0;
+}
+
+.p {
+    color: var(--p);
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
     
+}
+
     .wrapper {
         display: flex;
-        width: 100vh;
+        width: 100vw;               /** Ошибка была тут. Ширина выставляется не через VH а через VW - View Width... */
         height: 100vh;
         flex-wrap: nowrap;
     }
     /* ! 1. Разобраться с боковой менюшкой и её распределением при появлении вертикальной прокрутки. */
     /* ! 2. Разобраться с проблемой центральной секции и того, почему она не занимает всё предоставленное ей пространство. */
-    /* ? Возможно я мог бы поиграться с размерами шрифтов и transition чтобы при наведении на ссылку в менюшке у меня уменьшался шрифт и было видно фулл текст */
+    /* ? Возможно я мог бы поиграться с размерами шрифтов и transition чтобы при наведении на ссылку в менюшке у меня уменьшался шрифт и было видно фулл текст */ 
