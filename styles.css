@@ -93,6 +93,7 @@
 
     .navbar {
     padding: 0;
+    overflow: hidden;
     }
 
     .navbar__item {
@@ -141,6 +142,7 @@
         padding: 40px 40px;
         width: 100vw;
         margin-left: 325px; 
+        flex-direction: column;
     }
 
     .welcome h2 {
@@ -154,6 +156,15 @@
                 margin-bottom: 32px;
     }
     .welcome h3 {
+    color: var(--h3);
+    font-family: Segoe UI;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+h3, .h3 {
     color: var(--h3);
     font-family: Segoe UI;
     font-size: 21px;
@@ -232,9 +243,21 @@ p {
     line-height: 30px;
     letter-spacing: 0%;
     text-align: left;
-    border-left: 2px solid white;
+    border-left: 2px solid var(--navbar-p);
     padding-left: 7px;
     margin-top: 10px;
+}
+.p__hr2{
+    color: var(--p);
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-left: 2px solid var(--navbar-p);
+    padding-left: 7px;
+    margin-top: 2px;
 }
 
 #waw2123 {
@@ -292,7 +315,7 @@ margin-bottom: 3px;
 .h3 {
     color: var(--h3);
     font-family: Segoe UI;
-    font-size: 19px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0%;
@@ -340,6 +363,48 @@ margin-bottom: 3px;
 #fdf21d {
     border-radius: 50%;
 }
+
+h2, .h2 {
+    color: rgb(183, 192, 201);
+    font-family: Segoe UI;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0%;   /** Применять эти стили для будущих секторов сайта */
+    text-align: left;
+    margin-bottom: 32px;
+    border-bottom: solid 1px var(--navbar-p);
+    padding-bottom: 3px;
+    margin-top: 30px;
+}
+.h3 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul {
+    margin: 0;
+}
+
+.list {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+.list__item::marker{
+    color: white;
+}
+
+                .title__emoji {
+                }
+                .title__name {
+                }
+
+.content {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+
 
 
     .wrapper {
